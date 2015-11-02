@@ -15,3 +15,4 @@ module.exports = (robot) ->
         username: username,
         icon_url: icon_url
       robot.http(process.env.SLACK_WEBHOOK_URL).post(payload)
+    res.end()
