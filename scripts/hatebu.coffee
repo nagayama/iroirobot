@@ -7,7 +7,7 @@ module.exports = (robot) ->
       username = body.username
 
       icon_url = "http://cdn1.www.st-hatena.com/users/#{username.substring(0,2)}/#{username}/profile.gif"
-      link = "<#{body.permalink}|#{body.title}> #{body.count} users"
+      link = "<#{body.url}|#{body.title}> #{body.count} users"
 
       payload = JSON.stringify
         channel: "#" + channel,
